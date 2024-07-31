@@ -1,0 +1,18 @@
+x: int
+y: int
+
+
+print("Digite dois numeros: ")
+x = 0
+y = None
+
+
+while x != y:
+    x = int(input("primeiro numero: "))
+    y = int(input("segundo numero: "))
+    if x < y:
+      print("CRESCENTE")
+    elif x > y:
+      print("DECRESCENTE")
+    else:
+      print("fim")
