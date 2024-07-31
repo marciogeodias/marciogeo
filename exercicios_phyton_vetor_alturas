@@ -1,0 +1,20 @@
+N = int(input("Quantas pessoas serao digitadas? "))
+vet = [ 0 for x in range(N)]
+soma_alt = 0
+porc = 0
+
+
+for i in range(1 , N + 1):
+  print(f"Dados da [{i}]a pessoa:")
+  nome = str(input("Nome: "))
+  idade = int(input("Idade: "))
+  altura = float(input("Altura: "))
+  soma_alt = soma_alt + altura
+
+for i in range (0, N):
+  if idade < 16:
+    vet[i] = nome
+print(soma_alt)
+media = soma_alt / N
+print(f"Media das alturas:", media)
+print(vet)
