@@ -1,0 +1,19 @@
+N = int(input("Qual a ordem da matriz: "))
+negativos = 0
+while N > 10:
+  N = int(input("Qual a ordem da matriz: "))
+
+matriz = [[0 for x in range (N)] for x in range (N)]
+
+for i in range (0, N):
+  for j in range (0, N):
+    matriz[i][j] = int(input(f"elemento [{i}], [{j}]: "))
+    if matriz[i][j] < 0:
+      negativos = negativos + 1
+
+print("Diagonal principal: ")
+for i in range (0, N):
+  print(f"{matriz[i][i]}", end=" ")
+print()
+
+print("numeros negativos: ", negativos)
